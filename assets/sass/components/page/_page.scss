@@ -1,0 +1,123 @@
+.test-data {
+	font-family: $font-condensed;
+	min-width: 400px;
+	display: table;
+	overflow: hidden;
+	@include rounded(10px);
+
+	&-wrap {
+		width: 100%;
+		max-width: $max-width;
+		margin: 0 auto 20px auto;
+	  overflow: auto;
+	  @include box-shadow( 0 10px 40px 0px rgba(0, 0, 0, 0.15) );
+	}
+
+  div {
+		//@include flex();
+  	//@include flex-direction(row);
+  	display: table-row;
+  	font-size: $font-size-table-content;
+  	color: $color-grey;
+
+  	&:nth-child(odd) {
+      //background-color: $color-yellow;
+  	}
+
+  	&:first-child {
+  		font-size: $font-size-table-header;
+  		font-weight: bold;
+  		background-color: $color-green;
+  		color: $color-black;
+  		cursor: pointer;
+  		@include box-shadow( 0 5px 20px 0px rgba(0, 0, 0, 0.1) );  		
+  	}
+
+  	span {
+  		display: table-cell;
+  		padding: 20px 10px;
+  		width: calc(100% / 7);
+  		overflow: hidden;
+  		border-bottom: 1px solid $color-grey-light;
+
+  		&:first-child {
+  			padding-left: 40px;
+  			font-style: italic;
+ 			} 
+
+ 			&:last-child {
+  			padding-right: 40px;
+ 			} 
+
+ 			&:nth-child(4),
+ 			&:nth-child(5),
+ 			&:nth-child(6) {
+ 				text-align: center;
+ 			}
+      
+  	}
+  }
+  
+
+	//
+	// Stocked version, MOBILE FIRST
+	// --------------------------------------------------------------------------
+
+  &.stocked {
+		display: block;
+		min-width: 0;
+		
+		@media screen and (min-width: $breakpoint-phone) {
+			display: table;
+		}
+
+
+		div {
+			display: block;
+			border-bottom: 2px solid $color-grey-light;
+			
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			@media screen and (min-width: $breakpoint-phone) {
+				display: table-row;
+				border-bototm: 0;
+			}
+
+			span {
+				display: block;
+				width: 100%;
+				padding: 10px;
+				text-align: center;
+		
+				@media screen and (min-width: $breakpoint-phone) {
+					display: table-cell;
+					width: calc(100% / 7);
+					padding: 20px 10px;
+				}
+
+
+				&:first-child {
+	  			padding-left: 10px;
+	  			font-style: normal;
+
+	  			@media screen and (min-width: $breakpoint-phone) {
+	  				padding-left: 40px;
+	  			}
+	 			} 
+
+	 			&:last-child {
+	  			padding-right: 10px;
+
+	  			@media screen and (min-width: $breakpoint-phone) {
+	  				padding-right: 40px;
+	  			}
+	 			} 
+
+			}
+		}
+		
+	}
+
+}

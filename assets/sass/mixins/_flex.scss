@@ -1,0 +1,39 @@
+@mixin flex( $importance: ''  ) {
+    display: -webkit-box #{$importance};
+    display: -moz-box #{$importance};
+    display: -ms-flexbox #{$importance};
+    display: -webkit-flex #{$importance};
+    display: flex #{$importance};
+}
+
+@mixin flex-direction($type) {
+    -webkit-flex-direction: $type;
+    -ms-flex-direction: $type;
+    flex-direction: $type;
+}
+
+@mixin flex-wrap($type) {
+    -webkit-flex-wrap: $type;
+    -ms-flex-wrap: $type;
+    flex-wrap: $type;
+}
+
+@mixin flex-order($order) {
+    -webkit-box-ordinal-group: $order;
+    -moz-box-ordinal-group: $order;
+    -ms-flex-order: $order;
+    -webkit-order: $order;
+    order: $order;
+}
+
+@mixin flex-alignitems($align) {
+    -webkit-align-items: $align;
+    -ms-align-items: $align;
+    align-items: $align;
+}
+
+@mixin flex-justifycontent($justify) {
+    -webkit-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+}

@@ -1,0 +1,29 @@
+/* ==========================================================================
+   MIXINS
+   ========================================================================== */
+
+@import "mixins/animations";
+@import "mixins/clearfix";
+@import "mixins/rounded";
+@import "mixins/opacity";
+@import "mixins/flex";
+@import "mixins/boxshadow";
+
+/* ==========================================================================
+   Project styles
+   ========================================================================== */
+
+@import 'variables';
+@import 'colors';
+@import 'fonts';
+@import 'base';
+@import 'loader';
+
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+@import 'components/header/header';
+@import 'components/page/page';
+@import 'components/footer/footer';
