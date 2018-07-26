@@ -4,6 +4,7 @@
 	display: table;
 	overflow: hidden;
 	@include rounded(10px);
+	background-color: $color-white;
 
 	&-wrap {
 		width: 100%;
