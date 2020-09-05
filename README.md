@@ -1,9 +1,42 @@
+
+# Interview Task: Breaktrough Media
+
+Solutions is coded by Robert Koteles, Senior Frontend Developer, 2018. 
+
+
 # Really Simple JavaScript Test
 
 A simple data manipulation and styling test for front end developers. There are
 numerous ways to complete the tasks involved in this test and there are no right,
 or perfect answers. The test though will reveal roughly how knowledgeable and
 experienced a front end developer is.
+
+## Demo
+
+[Open demo](http://domainforssl.hu/interviewtask/breakthroughmedia/)
+![enter image description here](http://domainforssl.hu/interviewtask/breakthroughmedia/sample.png)
+
+## Technologies
+Vanilla JavaScript (ES5), XMLHttpRequest, CSS, HTML5 
+
+## GIT Hub
+
+Link:
+[https://github.com/kotelesroberto/breaktroughmedia](https://github.com/kotelesroberto/breaktroughmedia)
+
+## Clone
+
+Clone this repo to your local machine using 
+```
+https://github.com/kotelesroberto/breaktroughmedia.git
+```
+
+
+## Licence
+*   Copyright 2018 ©  Robert Koteles.
+
+
+
 
 ## The Test
 
@@ -98,7 +131,7 @@ test alone.
 - Advise candidates they should not spend more than 30-60 minutes on this test
 regardless of whether they complete it or not.
 
-## Authors
+## Authors of task
 
 Rob Waller
 
